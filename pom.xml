@@ -24,6 +24,98 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- hadoop 依赖 -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>2.10.0</version>
+            <exclusions>
+                <exclusion> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId></exclusion>
+                <exclusion> <groupId>log4j</groupId> <artifactId>log4j</artifactId> </exclusion>
+                <exclusion> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-common -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.10.0</version>
+            <exclusions>
+                <exclusion> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId></exclusion>
+                <exclusion> <groupId>log4j</groupId> <artifactId>log4j</artifactId> </exclusion>
+                <exclusion> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.10.0</version>
+            <exclusions>
+                <exclusion> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId></exclusion>
+                <exclusion> <groupId>log4j</groupId> <artifactId>log4j</artifactId> </exclusion>
+                <exclusion> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> </exclusion>
+            </exclusions>
+        </dependency>
+        <!--hadoop依赖 end-->
+
+        <!-- 导入logback日志的jar -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
+        <!-- druid连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <!--swagger依赖-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
